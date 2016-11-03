@@ -33,8 +33,16 @@ html {
 
 /*-----------------Header--------------------------*/
 header {
+    background-image: url(img/mainHomePage/homePageBackground.png);
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    height: 50vh;
+}
+.logo{
+    width: auto;
+    height: 100px;
+    position:absolute;
+    left:0;
+    top:0;
 }
 
