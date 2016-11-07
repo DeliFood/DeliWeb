@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-margin-: 460px;
-    min-margin: 1118px;
 
 }
 
@@ -70,8 +68,7 @@ html {
 h1,
 h2,
 h3 {
-    /*font-weight: 300;*/
-    /*text-transform: uppercase;*/
+    overflow: auto;
 }
 
 h1 {
@@ -116,7 +113,9 @@ header {
     height: 70px;
 }
 body {
-
+    min-width:1000px; /* suppose you want minimun width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
+    width:1000px;
 }
 .deliLogo-text-box {
     text-align: center;
@@ -194,4 +193,14 @@ body {
 }
 .placeholder {
     font-size: 10%;
+}
+
+/*-----------------Restaurant Page--------------------------*/
+
+.section-restaurant {
+    display:inline-block
+}
+
+.searchRestBox {
+
 }
