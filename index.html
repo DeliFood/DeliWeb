@@ -22,16 +22,21 @@
     </nav>
 </header>
 
-<body>
+<body
+        ng-app="deliApp"
+        ng-colltroller="mainCtrl">
+
 <section class="section-homePage">
-<div class="deliLogo-text-box">
-    <h1>We delivery your favorites to you </h1>
-    <form class="main-input-box">
-        <input type="text" class="mainSearchBox" placeholder=" Input your delivery address" >
-    </form>
-    <a class="btn btn-full" href="#">Find Restaurants</a>
-</div>
+    <div class="deliLogo-text-box">
+        <h1>We delivery your favorites to you </h1>
+        <form class="main-input-box">
+            <input type="text" class="mainSearchBox" placeholder=" Input your delivery address">
+        </form>
+        <a class="btn btn-full" href="#">Find Restaurants</a>
+    </div>
 </section>
+
+
 
 <footer class="section-compantInfo">
     <div class="row">
@@ -53,24 +58,48 @@
             <a href="#"> Become a Carrier </a>
         </div>
 
-</div>
-    </footer>
-<!--<section class="section-menu">-->
-<!--<div class="row">-->
-<!--<ul class="second-nav">-->
-<!--<li><a href="#"> Burgers </a></li>-->
-<!--<li><a href="#"> Hot Dogs </a></li>-->
-<!--<li><a href="#"> Chicken & More </a></li>-->
-<!--<li><a href="#"> Salad & Veggies </a></li>-->
-<!--<li><a href="#"> Breakfast </a></li>-->
-<!--<li><a href="#"> Begerages </a></li>-->
-<!--<li><a href="#"> Coffee & Frappes </a></li>-->
-<!--<li><a href="#"> Sides </a></li>-->
-<!--<li><a href="#"> Sweets </a></li>-->
-<!--<li><a href="#"> Value </a></li>-->
-<!--<li><a href="#"> Menu </a></li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</section>-->
+    </div>
+</footer>
+<section class="section-restaurant">
+    <!--<div class="horizontalSilder_root">-->
+    <div class="row">
+        <div class="col span-1-of-2 box">
+            <!--<div class="searchRestBox">-->
+            <!--<input type="text" value="find" class="searchRestaurantbox" placeholder=" Research Restaurant">-->
+            <!--&nbsp;&nbsp;&nbsp; <button type="submit" class="btn seaachRestaurant">Search</button>-->
+            <!--</div>-->
+            <input type="submit"value="Search" style="float: right" />
+            <div style="overflow: hidden; padding-right: .5em;">
+                <input type="text" style="width: 100%;" />
+            </div>​
+        </div>
+
+        <div class="col span-1-of-2 box">
+            <label>Filter By:&nbsp;
+                <select id="restaurantChoice">
+                    <option value="0">Sushi</option>
+                    <option value="1">Pizza</option>
+                    <option value="2">Indian</option>
+                    <option value="3">Chinese</option>
+                    <option value="4">American</option>
+                    <option value="5">Thai</option>
+                    <option value="6">Mexican</option>
+                    <option value="7">Korean</option>
+                    <option value="8">Salad</option>
+                    <option value="9">Italian</option>
+                    <option value="10">Japanese</option>
+                    <option value="11">Vegetarian</option>
+                    <option value="12">Mediterranean</option>
+                    <option value="12">Chicken</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="openNow">
+            <input type="checkbox" value="Open"> Open Now
+        </div>
+    </div>
+
+</section>
 </body>
 </html>
