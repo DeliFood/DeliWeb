@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="resources/js/app.js">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya:900&amp;subset=latin-ext" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <title>DeliFood</title>
 </head>
@@ -16,7 +16,7 @@
 <header>
     <nav>
         <div class="row">
-            <img src="resources/css/img/sign/deliLogo.png" alt="DeliFood Logo" class="logo">
+            <img src="resources/css/img/sign/deliSign.png" alt="DeliFood Logo" class="logo">
             <a class="deliWord">DeliFood </a>
         </div>
     </nav>
@@ -53,7 +53,7 @@
         </div>
 
         <div class="col span-1-of-3 box">
-            <h3>Doing Business</h3>
+            <h3>Doing Business With Us</h3>
             <a href="#"> Become a partner Restaurant </a><br>
             <a href="#"> Become a Carrier </a>
         </div>
@@ -62,20 +62,21 @@
 </footer>
 <section class="section-restaurant">
     <!--<div class="horizontalSilder_root">-->
-    <div class="row">
-        <div class="col span-1-of-2 box">
-            <!--<div class="searchRestBox">-->
-            <!--<input type="text" value="find" class="searchRestaurantbox" placeholder=" Research Restaurant">-->
-            <!--&nbsp;&nbsp;&nbsp; <button type="submit" class="btn seaachRestaurant">Search</button>-->
-            <!--</div>-->
-            <input type="submit"value="Search" style="float: right" />
-            <div style="overflow: hidden; padding-right: .5em;">
-                <input type="text" style="width: 100%;" />
-            </div>​
+    <!--<div class="col span-1-of-4 box">
+    <!--<div class="searchRestBox">-->
+    <!--<input type="text" value="find" class="searchRestaurantbox" placeholder=" Research Restaurant">-->
+    <!--&nbsp;&nbsp;&nbsp; <button type="submit" class="btn seaachRestaurant">Search</button>-->
+    <!--</div>-->
+    <div class="col span-2-of-7 box">
+        <div class ="search-box">
+                <input type="text" style="width: 60%;" />
+            <input type="submit" value="Search" />
         </div>
+    </div>
+    <div class="row">
 
-        <div class="col span-1-of-2 box">
-            <label>Filter By:&nbsp;
+        <div class="col span-1.5-of-7 box">
+            <label> Filter By:&nbsp;
                 <select id="restaurantChoice">
                     <option value="0">Sushi</option>
                     <option value="1">Pizza</option>
@@ -95,8 +96,20 @@
             </label>
         </div>
 
-        <div class="openNow">
-            <input type="checkbox" value="Open"> Open Now
+        <div class="col span-1-of-7 box">
+            <div class="openNow">
+                <input type="checkbox" value="Open"> Open Now
+            </div>
+        </div>
+        <div class="col span-1-of-7 box">
+            <div class="withIn30m">
+                <input type="checkbox" value="Open"> With in 30m
+            </div>
+        </div>
+        <div class="col span-1.5-of-7 box">
+            <div class="Vegetarian">
+                <input type="checkbox" value="Open"> Vegetarian Option
+            </div>
         </div>
     </div>
 
