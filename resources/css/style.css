@@ -136,6 +136,7 @@ body {
     background-position: center;
 }
 .section-compantInfo {
+    font-family: 'Open Sans';
     list-style:none;
     background-color: #222434;
     color: #fff;
@@ -198,7 +199,13 @@ body {
 /*-----------------Restaurant Page--------------------------*/
 
 .section-restaurant {
-    display:inline-block
+    /*display:inline-block;*/
+    border-right: 10pt solid #222434;
+    border-left: 10pt solid #222434;
+    font-size: 80%;
+    font-family: 'Open Sans';
+    padding-top: 1%;
+    padding-left: 2%;
 }
 
 .searchRestBox {
