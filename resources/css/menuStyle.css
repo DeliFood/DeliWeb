@@ -10,7 +10,7 @@ html {
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 17px;
     text-rendering: optimizeLegibility;
 }
 
@@ -81,11 +81,10 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 180%;
     word-spacing: 2px;
-    text-align: center;
-    margin: 30px auto;
+    margin-bottom: 2%;
     letter-spacing: 1px;
 }
 
@@ -208,4 +207,10 @@ body {
 .restaurant_Logo {
     width: 100%;
     height: auto;
+}
+.openSign {
+    margin-left: 10%;
+    display: block;
+    width: 20%;
+    height:auto;
 }
