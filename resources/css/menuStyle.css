@@ -125,7 +125,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.restaurant_Logo{
+    width: 100%;
+    display: block;
+}
 
+.openSign {
+    width: 75%;
+    height: auto;
+    display: block;
+}
 .section-homePage {
     margin-left:auto;
     margin-right:auto;
@@ -195,3 +204,8 @@ body {
     font-size: 10%;
 }
 
+/*-----For the restaurant logo in menu page-----*/
+.restaurant_Logo {
+    width: 100%;
+    height: auto;
+}

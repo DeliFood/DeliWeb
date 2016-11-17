@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya:900&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
     <title>Menu</title>
 </head>
@@ -24,21 +25,24 @@
 
 <body
         ng-app="deliApp"
-        ng-colltroller="mainCtrl">
+        ng-controller="mainCtrl">
 <section class="section-restaurantInfo">
     <div class="row">
-        <div class="col span-1-of-3 box">
-            <img src="resources/css/img/restaurantPage/burgerKingLogo.jpeg" alt="restaurant Logo" class="restaurant_Logo">
+        <div class="col span-1-of-5 box">
+            <img src="resources/css/img/restaurantPage/burgerKingLogo.png" alt="restaurant Logo" class="restaurant_Logo">
         </div>
 
-        <div class="col span-1-of-3 box">
+        <div class="col span-1.5-of-5 box">
+            <br>
+            <div class="restaurantDetail">
             <h3>Burger King</h3>
             <p class="delivery_time">Delivery Time: 10:00 AM to 10:00 PM</p>
             <p class="get_orderTime"> Get order: 45-50 min</p>
             <p class="restaurant_address"> 11723 NE 8th St Bellevue, WA 98005</p>
         </div>
+            </div>
 
-        <div class="col span-1-of-3 box">
+        <div class="col span-1.5-of-5 box">
             <img src="resources/css/img/sign/openSign.png" alt="restaurant Logo" class="openSign">
         </div>
 
@@ -82,8 +86,6 @@
 
     </div>
 </section>
-
-
 
 <footer class="section-compantInfo">
     <div class="row">
