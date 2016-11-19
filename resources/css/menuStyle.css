@@ -137,21 +137,17 @@ body {
     height: auto;
     display: block;
 }
-.section-homePage {
-    margin-left:auto;
-    margin-right:auto;
-    background-image: url(img/mainHomePage/homePageBackground.png);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-.section-compantInfo {
+
+footer {
     font-family: 'Open Sans';
     list-style:none;
     background-color: #222434;
     color: #fff;
     padding-top: 1%;
     padding-left: 2%;
+    width: 100%;
+    position: absolute;
+
 }
 .col a:link,
 .col a:visited{
@@ -286,3 +282,4 @@ li a:hover {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
