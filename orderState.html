@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="resources/css/orderStateStyle.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
+
     <meta charset="UTF-8">
     <title>OrderState</title>
 </head>
@@ -38,9 +40,72 @@
 
 
         <div class="orderStateBar-box">
+            <div id = deliverButton>
+                <button onclick="move()"> Start Deliver </button>
+
+            </div>
+                <div id="myProgress">
+                    <div id="myBar">
+                        <div id="label">10%</div>
+                    </div>
+
+                </div>
+
+
+
+            <script>
+                function move() {
+                    var elem = document.getElementById("myBar");
+                    var width = 1;
+                    var id = setInterval(frame, 360);
+                    function frame() {
+                        if (width >= 100) {
+                            clearInterval(id);
+                        } else {
+                            width++;
+                            elem.style.width = width + '%';
+                            document.getElementById("label").innerHTML = width * 1 + '%';
+                        }
+                    }
+                }
+            </script>
 
 
         </div>
+
+        <p class="stateBar-Tag" align="right"> </p>
+        <div class="row">
+            <div class="col span-1-of-6 box">
+                <h7>---------^---------</h7>
+
+                <h7>Restaurant have received your order </h7>
+
+            </div>
+
+            <div class="col span-1-of-6 box">
+            </div>
+            <div class="col span-1-of-6 box">
+                <h7>---------^-------</h7>
+                <h7>Ready to Delivery</h7>
+
+            </div>
+
+            <div class="col span-1-of-6 box">
+                <h7>-----------^-------</h7>
+                <h7>Courier have taken your order</h7>
+
+            </div>
+
+            <div class="col span-1-of-6 box">
+            </div>
+            <div class="col span-1-of-6 box">
+                <h7>--------------^---</h7>
+                <h7>Your order have delivered</h7>
+
+            </div>
+
+        </div>
+
         <p class="delivery_time" align="right"> Estimated Delivery Time: 8:00 PM</p>
 
 
