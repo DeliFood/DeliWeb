@@ -17,7 +17,7 @@
 <header>
     <nav>
         <div class="row">
-            <img src="resources/css/img/sign/deliLogo.png" alt="DeliFood Logo" class="logo" >
+            <img src="resources/css/img/sign/deliLogo.png" alt="DeliFood Logo" class="logo">
             <a class="deliWord">DeliFood </a>
         </div>
     </nav>
@@ -25,58 +25,71 @@
 
 <body
         ng-app="deliApp"
-        ng-controller="mainCtrl">
-<section class="section-restaurantInfo">
-    <div class="row">
-        <div class="col span-1-of-5 box">
-            <img src="resources/css/img/restaurantPage/burgerKingLogo.png" alt="restaurant Logo" class="restaurant_Logo">
-        </div>
-
-        <div class="col span-1.5-of-5 box">
-            <br>
-            <div class="restaurantDetail">
-            <h2>Burger King</h2>
-            <p class="delivery_time">Delivery Time: 10:00 AM to 10:00 PM</p>
-            <p class="get_orderTime"> Get order time: 45-50 min</p>
-            <p class="restaurant_address"> 11723 NE 8th St Bellevue, WA 98005</p>
-        </div>
+        ng-controller="mainCtrl" style="width: 100%;">
+<div  class="bodysection"style="position: relative">
+<div class="restaurant_menu" style="width: 70%; float: left; ">
+    <div class="section-restaurantInfo">
+        <div class="row">
+            <div class="col span-1-of-5 box">
+                <img src="resources/css/img/restaurantPage/burgerKingLogo.png" alt="restaurant Logo"
+                     class="restaurant_Logo">
             </div>
 
-        <div class="col span-2-of-5 box">
-            <img src="resources/css/img/sign/openSign.png" alt="restaurant Logo" class="openSign">
-        </div>
-
-    </div>
-</section>
-
-<section class="section-MenuCategoriesList">
-    <ul>
-        <li><a href="#"> Beverages</a></li>
-        <li><a href="#"> Breakfast</a></li>
-        <li><a href="#burger"> Burger</a></li>
-        <li><a href="#"> Chicken & More</a></li>
-        <li><a href="#"> Coffee & Frappes</a></li>
-    </ul>
-
-            <div class="dropdown">
-                <button class="dropbtn">More</button>
-                <div class="dropdown-content">
-                    <a href="#"> Hotdogs</a>
-                    <a href="#"> King JR Meals</a>
-                    <a href="#"> Salad & Veggies</a>
-                    <a href="#"> Sides</a>
-                    <a href="#"> Sweets</a>
-                    <a href="#"> Value Menu</a>
+            <div class="col span-1.5-of-5 box">
+                <br>
+                <div class="restaurantDetail">
+                    <h2>Burger King</h2>
+                    <p class="delivery_time">Delivery Time: 10:00 AM to 10:00 PM</p>
+                    <p class="get_orderTime"> Get order time: 45-50 min</p>
+                    <p class="restaurant_address"> 11723 NE 8th St Bellevue, WA 98005</p>
                 </div>
-                <!--<button class="dropbtn">More</button>-->
-        </div>
-</section>
+            </div>
 
-<section class="section-menuimage">
-    <div id="burger">
-        <img src="resources/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+            <div class="col span-2-of-5 box">
+                <img src="resources/css/img/sign/openSign.png" alt="restaurant Logo" class="openSign">
+            </div>
+
         </div>
-    </section>
+    </div>
+
+    <div class="section-MenuCategoriesList">
+        <ul>
+            <li><a href="#"> Beverages</a></li>
+            <li><a href="#"> Breakfast</a></li>
+            <li><a href="#burger"> Burger</a></li>
+            <li><a href="#"> Chicken & More</a></li>
+            <li><a href="#"> Coffee & Frappes</a></li>
+        </ul>
+
+        <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <a href="#"> Hotdogs</a>
+                <a href="#"> King JR Meals</a>
+                <a href="#"> Salad & Veggies</a>
+                <a href="#"> Sides</a>
+                <a href="#"> Sweets</a>
+                <a href="#"> Value Menu</a>
+            </div>
+            <!--<button class="dropbtn">More</button>-->
+        </div>
+    </div>
+
+    <div class="section-menuimage">
+        <div id="burger">
+            <div class="row">
+                <div class="col span-1-of-5 box">
+                    <img src="resources/css/img/burgerKing/burgerKing_Burger/baconCheeseBurger.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="orderInfo" style="width: 30%; float: right;">
+    <h2>Order Info</h2>
+</div>
+    </div>
 
 <footer class="section-compantInfo">
     <div class="row">
