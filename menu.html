@@ -40,6 +40,19 @@
                 <div class="restaurantDetail">
                     <h2>Burger King</h2>
                     <p class="delivery_time">Delivery Time: 10:00 AM to 10:00 PM</p>
+                    <p id="demo"></p>
+
+                    <script>
+                        var d = new Date();
+                        d.setDate(d.getDate());
+                        document.getElementById("demo").innerHTML = d;
+                    </script>
+------
+                    <?php
+                        date_default_timezone_set("America/New_York");
+                        echo "The time is " . date("h:i:sa");
+                        ?>
+
                     <p class="get_orderTime"> Get order time: 45-50 min</p>
                     <p class="restaurant_address"> 11723 NE 8th St Bellevue, WA 98005</p>
                 </div>
